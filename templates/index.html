@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plagiarism Checker</h1>
+        <form id="plagiarismForm">
+            <div class="text-container">
+                <textarea id="sample1" name="sample1" placeholder="Enter text for Sample 1"></textarea>
+                <textarea id="sample2" name="sample2" placeholder="Enter text for Sample 2"></textarea>
+            </div>
+            <button type="submit">Check Similarity</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
